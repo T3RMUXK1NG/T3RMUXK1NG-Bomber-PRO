@@ -326,7 +326,7 @@ jobs:
               <h2>QUICK INSTALL (TERMUX)</h2>
               <div class="code-block">
                   <button class="copy-btn" onclick="copyCode(this)">COPY</button>
-                  pkg install git python -y && git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git && cd T3RMUXK1NG-Bomber-PRO && chmod +x RS-Bomber.sh && ./RS-Bomber.sh
+                  pkg install git python -y && git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git && cd T3RMUXK1NG-Bomber-PRO && chmod +x T3RMUXK1NG-Bomber.sh && ./T3RMUXK1NG-Bomber.sh
               </div>
               <p style="text-align: center; color: #666; margin-top: 15px;">Copy and paste this in Termux to install and run</p>
           </div>

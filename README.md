@@ -61,8 +61,8 @@ RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool,
 pkg install git python -y
 git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git
 cd T3RMUXK1NG-Bomber-PRO
-chmod +x RS-Bomber.sh
-./RS-Bomber.sh
+chmod +x T3RMUXK1NG-Bomber.sh
+./T3RMUXK1NG-Bomber.sh
 ```
 
 ### Debian-based Linux
@@ -71,7 +71,7 @@ chmod +x RS-Bomber.sh
 sudo apt install git python3 python3-pip -y
 git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git
 cd T3RMUXK1NG-Bomber-PRO
-bash RS-Bomber.sh
+bash T3RMUXK1NG-Bomber.sh
 ```
 
 ### Install via PIP
@@ -84,7 +84,7 @@ python3 bomber.py
 ### One-Line Install (Termux)
 
 ```bash
-pkg install git python -y && git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git && cd T3RMUXK1NG-Bomber-PRO && chmod +x RS-Bomber.sh && ./RS-Bomber.sh
+pkg install git python -y && git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git && cd T3RMUXK1NG-Bomber-PRO && chmod +x T3RMUXK1NG-Bomber.sh && ./T3RMUXK1NG-Bomber.sh
 ```
 
 ---
