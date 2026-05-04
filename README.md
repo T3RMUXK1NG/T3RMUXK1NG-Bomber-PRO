@@ -35,11 +35,11 @@
 
 ## ⚡ What is RS T3rmuxk1ng Bomber PRO?
 
-RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool, rebranded and enhanced by **RS T3RMUXK1NG | T3rmuxk1ng**. It's an open-source SMS/Call/Mail bombing tool designed for Linux and Termux environments, built for **educational and research purposes**.
+RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool, rebranded and enhanced by **T3RMUXK1NG | T3rmuxk1ng**. It's an open-source SMS/Call/Mail bombing tool designed for Linux and Termux environments, built for **educational and research purposes**.
 
 ### 🆕 What Makes This PRO Edition Different?
 
-| Feature | Original TBomb | RS Bomber PRO |
+| Feature | Original TBomb | T3RMUXK1NG Bomber PRO |
 |---------|---------------|---------------|
 | RS Custom Branding | ❌ | ✅ Full RS Branding |
 | Custom ASCII Art Banner | ❌ | ✅ RS Branded Banner |
@@ -105,7 +105,7 @@ python3 bomber.py
 | `-call` / `--call` | Start CALL Bomb mode |
 | `-mail` / `--mail` | Start MAIL Bomb mode |
 | `-ascii` / `--ascii` | ASCII-only mode (no special chars) |
-| `-u` / `--update` | Update RS Bomber PRO |
+| `-u` / `--update` | Update T3RMUXK1NG Bomber PRO |
 | `-c` / `--contributors` | Show contributors |
 | `-v` / `--version` | Show version |
 
@@ -149,7 +149,7 @@ When you run the bomber, you'll be asked:
 
 ### Tips for Best Performance
 - Use **single thread** with considerable delay time for best results
-- Always use the **latest version** of RS Bomber PRO
+- Always use the **latest version** of T3RMUXK1NG Bomber PRO
 - Ensure **active internet connection**
 - Do **not** use VPN — it can increase fail rates
 
@@ -197,7 +197,7 @@ Due to overuse, a bunch of APIs have been taken offline. It's normal if you don'
 
 ---
 
-## 👤 About RS T3RMUXK1NG | T3rmuxk1ng
+## 👤 About T3RMUXK1NG | T3rmuxk1ng
 
 <div align="center">
 
@@ -206,14 +206,14 @@ Due to overuse, a bunch of APIs have been taken offline. It's normal if you don'
 
 </div>
 
-**RS T3RMUXK1NG** is a LEGENDARY Security Developer and ELITE Ethical Hacker from India with **80+ security projects** on GitHub. Creator of:
+**T3RMUXK1NG** is a LEGENDARY Security Developer and ELITE Ethical Hacker from India with **80+ security projects** on GitHub. Creator of:
 
 - 🔥 RS WiFi Cracker PRO
 - 🔥 RS Bluetooth Nexus
 - 🔥 RS Attack Toolkit
 - 🔥 RS T3rmuxk1ng NetHunter PRO
 - 🔥 Holly AI Girlfriend
-- 🔥 RS Ultimate Hacking Course
+- 🔥 T3RMUXK1NG Ultimate Hacking Course
 - 🔥 RS Memory Skill (ULTIMATE NEXUS v4.0)
 - 🔥 RS T3rmuxk1ng Bomber PRO
 
@@ -235,7 +235,7 @@ This tool is for **educational and research purposes only**. The author is **not
 
 ## 📜 Credits
 
-- **RS T3RMUXK1NG | T3rmuxk1ng** — PRO Edition branding, enhancements, and features
+- **T3RMUXK1NG | T3rmuxk1ng** — PRO Edition branding, enhancements, and features
 - **TheSpeedX** ([TBomb](https://github.com/TheSpeedX/TBomb)) — Original TBomb creator
 - **t0xic0der** — Contributor
 - **scpketer** — Contributor

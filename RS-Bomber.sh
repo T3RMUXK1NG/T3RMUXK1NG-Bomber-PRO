@@ -4,7 +4,7 @@
 #                                                                              #
 #  RS T3rmuxk1ng Bomber PRO - Shell Launcher                                  #
 #                                                                              #
-#  Created by: RS T3RMUXK1NG | T3rmuxk1ng                                          #
+#  Created by: T3RMUXK1NG | T3rmuxk1ng                                          #
 #  YouTube: https://youtube.com/@T3rmuxk1ng                                   #
 #  GitHub: https://github.com/T3RMUXK1NG                             #
 #                                                                              #
@@ -59,7 +59,7 @@ banner() {
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
     echo -e "${Y}  🔥 RS T3rmuxk1ng Bomber PRO - Next Level Edition 🔥${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
-    echo -e "${C}  👤 Created by : RS T3RMUXK1NG | T3rmuxk1ng${NC}"
+    echo -e "${C}  👤 Created by : T3RMUXK1NG | T3rmuxk1ng${NC}"
     echo -e "${C}  🎬 YouTube    : ${W}https://youtube.com/@T3rmuxk1ng${NC}"
     echo -e "${C}  💻 GitHub     : ${W}https://github.com/T3RMUXK1NG${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
@@ -137,7 +137,7 @@ do
     echo -e "  ${G}[ 1 ]${NC} Start SMS  Bomber "
     echo -e "  ${G}[ 2 ]${NC} Start CALL Bomber "
     echo -e "  ${G}[ 3 ]${NC} Start MAIL Bomber "
-    echo -e "  ${G}[ 4 ]${NC} Update RS Bomber PRO "
+    echo -e "  ${G}[ 4 ]${NC} Update T3RMUXK1NG Bomber PRO "
     echo -e "  ${G}[ 5 ]${NC} Exit "
     read ch
     clear
@@ -145,7 +145,7 @@ do
         1) $PYTHON bomber.py --sms; exit ;;
         2) $PYTHON bomber.py --call; exit ;;
         3) $PYTHON bomber.py --mail; exit ;;
-        4) echo -e "${C}  Downloading Latest T3RMUXK1NG PRO Files...${NC}"; rm -f .update; $PYTHON bomber.py --update; echo -e "${C}  RUN RS Bomber PRO Again...${NC}"; pause; exit ;;
+        4) echo -e "${C}  Downloading Latest T3RMUXK1NG PRO Files...${NC}"; rm -f .update; $PYTHON bomber.py --update; echo -e "${C}  RUN T3RMUXK1NG Bomber PRO Again...${NC}"; pause; exit ;;
         5) banner; echo -e "${Y}  🔥 SUBSCRIBE: youtube.com/@T3rmuxk1ng${NC}"; exit ;;
         *) echo -e "${R}  Invalid Input !!!${NC}"; pause ;;
     esac

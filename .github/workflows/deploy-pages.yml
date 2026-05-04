@@ -259,7 +259,7 @@ jobs:
           <canvas class="matrix-bg" id="matrixCanvas"></canvas>
           <div class="glow-line"></div>
           <div class="header">
-              <div class="logo-text">RS T3RMUXK1NG</div>
+              <div class="logo-text">T3RMUXK1NG</div>
               <div class="logo-text" style="font-size: clamp(1.2rem, 3.5vw, 2.2rem); margin-top: 5px;">BOMBER PRO</div>
               <div class="subtitle">SMS • Call • Mail Bomber | Next Level Edition</div>
               <div style="margin-top: 15px;">
@@ -341,7 +341,7 @@ jobs:
               <a href="https://github.com/T3RMUXK1NG">GitHub</a>
               <a href="https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO">Repo</a>
               <a href="https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/issues">Issues</a>
-              <p style="color: #444; margin-top: 15px; font-size: 0.8rem;">Created by RS T3RMUXK1NG | T3rmuxk1ng | Educational Purposes Only | GPL v3</p>
+              <p style="color: #444; margin-top: 15px; font-size: 0.8rem;">Created by T3RMUXK1NG | T3rmuxk1ng | Educational Purposes Only | GPL v3</p>
           </div>
           <script>
               const canvas = document.getElementById('matrixCanvas');

@@ -12,7 +12,7 @@
 #                                                                              #
 #  RS T3rmuxk1ng Bomber PRO - Next Level Edition                              #
 #                                                                              #
-#  Created by: RS T3RMUXK1NG | T3rmuxk1ng                                          #
+#  Created by: T3RMUXK1NG | T3rmuxk1ng                                          #
 #  YouTube: https://youtube.com/@T3rmuxk1ng                                   #
 #  GitHub: https://github.com/T3RMUXK1NG                             #
 #                                                                              #
@@ -57,7 +57,7 @@ except ImportError:
     sys.exit(1)
 
 # RS Branding Constants
-RS_AUTHOR = "RS T3RMUXK1NG | T3rmuxk1ng"
+T3RMUXK1NG_AUTHOR = "T3RMUXK1NG | T3rmuxk1ng"
 RS_YOUTUBE = "https://youtube.com/@T3rmuxk1ng"
 RS_GITHUB = "https://github.com/T3RMUXK1NG"
 RS_REPO = "T3RMUXK1NG-Bomber-PRO"
@@ -97,7 +97,7 @@ def bann_text():
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 {Fore.YELLOW}  🔥 RS T3rmuxk1ng Bomber PRO - Next Level Edition 🔥{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
-{Fore.CYAN}  👤 Created by : RS T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
+{Fore.CYAN}  👤 Created by : T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  🎬 YouTube    : {Fore.WHITE}https://youtube.com/@T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  💻 GitHub     : {Fore.WHITE}https://github.com/T3RMUXK1NG{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
@@ -107,7 +107,7 @@ def bann_text():
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 {Fore.YELLOW}  RS T3rmuxk1ng Bomber PRO - Next Level Edition{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
-{Fore.CYAN}  Created by : RS T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
+{Fore.CYAN}  Created by : T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  YouTube    : https://youtube.com/@T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  GitHub     : https://github.com/T3RMUXK1NG{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
@@ -170,7 +170,7 @@ def do_zip_update():
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update RS Bomber PRO.")
+        mesgdcrt.FailureMessage("Unable to update T3RMUXK1NG Bomber PRO.")
         mesgdcrt.WarningMessage(
             f"Grab The Latest one From https://github.com/T3RMUXK1NG/{RS_REPO}")
 
@@ -203,7 +203,7 @@ def do_git_update():
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update RS Bomber PRO.")
+        mesgdcrt.FailureMessage("Unable to update T3RMUXK1NG Bomber PRO.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
         mesgdcrt.GeneralMessage("Then run command:")
         print(
@@ -233,7 +233,7 @@ def check_for_updates():
         update()
     else:
         mesgdcrt.SuccessMessage("RS T3rmuxk1ng Bomber PRO is up-to-date")
-        mesgdcrt.GeneralMessage("Starting RS Bomber PRO")
+        mesgdcrt.GeneralMessage("Starting T3RMUXK1NG Bomber PRO")
 
 
 def notifyen():
@@ -286,7 +286,7 @@ def get_mail_info():
 
 def pretty_print(cc, target, success, failed):
     requested = success + failed
-    mesgdcrt.SectionMessage("RS Bomber PRO is in progress - Please be patient")
+    mesgdcrt.SectionMessage("T3RMUXK1NG Bomber PRO is in progress - Please be patient")
     mesgdcrt.GeneralMessage(
         "Please stay connected to the internet during bombing")
     mesgdcrt.GeneralMessage("Target       : " + cc + " " + target)
@@ -296,7 +296,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
     mesgdcrt.SuccessMessage(
-        "RS Bomber PRO by RS T3RMUXK1NG | T3rmuxk1ng")
+        "T3RMUXK1NG Bomber PRO by T3RMUXK1NG | T3rmuxk1ng")
     mesgdcrt.GeneralMessage(
         "⚡ SUBSCRIBE: youtube.com/@T3rmuxk1ng")
 
@@ -306,7 +306,7 @@ def workernode(mode, cc, target, count, delay, max_threads):
     api = APIProvider(cc, target, mode, delay=delay)
     clr()
     mesgdcrt.SectionMessage(
-        "Gearing up the RS Bomber PRO - Please be patient")
+        "Gearing up the T3RMUXK1NG Bomber PRO - Please be patient")
     mesgdcrt.GeneralMessage(
         "Please stay connected to the internet during bombing")
     mesgdcrt.GeneralMessage("API Version   : " + api.api_version)
@@ -356,7 +356,7 @@ def workernode(mode, cc, target, count, delay, max_threads):
                 clr()
                 pretty_print(cc, target, success, failed)
     print("\n")
-    mesgdcrt.SuccessMessage("RS Bomber PRO completed!")
+    mesgdcrt.SuccessMessage("T3RMUXK1NG Bomber PRO completed!")
     mesgdcrt.SectionMessage(
         "🔥 SUBSCRIBE to T3rmuxk1ng on YouTube!")
     mesgdcrt.GeneralMessage("📺 https://youtube.com/@T3rmuxk1ng")
@@ -431,7 +431,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("RS Bomber PRO will work only in Python v3")
+    mesgdcrt.FailureMessage("T3RMUXK1NG Bomber PRO will work only in Python v3")
     sys.exit()
 
 try:
@@ -444,7 +444,7 @@ except (json.JSONDecodeError, KeyError, TypeError):
     update()
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['RS T3RMUXK1NG', 'SpeedX', 't0xic0der', 'scpketer']
+__CONTRIBUTORS__ = ['T3RMUXK1NG', 'SpeedX', 't0xic0der', 'scpketer']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -455,33 +455,33 @@ DEBUG_MODE = False
 
 description = """RS T3rmuxk1ng Bomber PRO - Next Level Edition
 
-RS Bomber PRO can be used for many purposes which includes -
+T3RMUXK1NG Bomber PRO can be used for many purposes which includes -
          Exposing the vulnerable APIs over Internet
          Friendly Spamming
          Testing Your Spam Detector and more ....
 
-RS Bomber PRO is not intended for malicious uses.
+T3RMUXK1NG Bomber PRO is not intended for malicious uses.
 
-Created by: RS T3RMUXK1NG | T3rmuxk1ng
+Created by: T3RMUXK1NG | T3rmuxk1ng
 YouTube: https://youtube.com/@T3rmuxk1ng
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by RS T3RMUXK1NG | T3rmuxk1ng !!!')
+                                 epilog='Coded by T3RMUXK1NG | T3rmuxk1ng !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start RS Bomber PRO with SMS Bomb mode")
+                    help="start T3RMUXK1NG Bomber PRO with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start RS Bomber PRO with CALL Bomb mode")
+                    help="start T3RMUXK1NG Bomber PRO with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start RS Bomber PRO with MAIL Bomb mode")
+                    help="start T3RMUXK1NG Bomber PRO with MAIL Bomb mode")
 parser.add_argument("-ascii", "--ascii", action="store_true",
                     help="show only characters of standard ASCII set")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update RS Bomber PRO")
+                    help="update T3RMUXK1NG Bomber PRO")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current RS Bomber PRO contributors")
+                    help="show current T3RMUXK1NG Bomber PRO contributors")
 parser.add_argument("-v", "--version", action="store_true",
-                    help="show current RS Bomber PRO version")
+                    help="show current T3RMUXK1NG Bomber PRO version")
 
 
 if __name__ == "__main__":
@@ -490,7 +490,7 @@ if __name__ == "__main__":
         ASCII_MODE = True
         mesgdcrt = MessageDecorator("stat")
     if args.version:
-        print("RS Bomber PRO Version: ", __VERSION__)
+        print("T3RMUXK1NG Bomber PRO Version: ", __VERSION__)
     elif args.contributors:
         print("Contributors: ", " ".join(__CONTRIBUTORS__))
     elif args.update:
