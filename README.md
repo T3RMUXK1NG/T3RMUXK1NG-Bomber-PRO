@@ -9,7 +9,7 @@
 <img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/rs-banner.png" alt="RS T3rmuxk1ng Bomber PRO Banner" width="700"/>
 
 [![YouTube](https://img.shields.io/badge/SUBSCRIBE-T3rmuxk1ng-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@T3rmuxk1ng)
-[![GitHub](https://img.shields.io/badge/GitHub-RS%20JATAV-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
+[![GitHub](https://img.shields.io/badge/GitHub-RS%20T3RMUXK1NG-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
 [![Stars](https://img.shields.io/github/stars/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO?colorA=23272a&colorB=ff4500&style=for-the-badge)](https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/stargazers)
 [![Issues](https://img.shields.io/github/issues/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO?colorA=23272a&colorB=007bff&style=for-the-badge)](https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/issues)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue?style=for-the-badge)](https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/blob/main/LICENSE)
@@ -202,7 +202,7 @@ Due to overuse, a bunch of APIs have been taken offline. It's normal if you don'
 <div align="center">
 
 [![YouTube](https://img.shields.io/badge/YouTube-T3rmuxk1ng-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@T3rmuxk1ng)
-[![GitHub](https://img.shields.io/badge/GitHub-t3rmuxk1ng--jatavv-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
+[![GitHub](https://img.shields.io/badge/GitHub-t3rmuxk1ng--t3rmuxk1ngv-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
 
 </div>
 
