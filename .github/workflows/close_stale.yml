@@ -1,0 +1,30 @@
+name: Close Stale Issues and PRs
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Close Stale Issues and PRs
+        uses: actions/stale@v9
+        with:
+          days-before-issue-stale: 30
+          days-before-issue-close: 5
+          stale-issue-message: "This issue has been inactive for 30 days and is now marked as stale. Comment or remove the stale label to keep it open.\n\n⚡ **RS T3rmuxk1ng Bomber PRO**\n📺 Subscribe: https://youtube.com/@T3rmuxk1ng"
+          close-issue-message: "This issue was closed due to inactivity.\n\n🔥 **For help, check out T3rmuxk1ng on YouTube**: https://youtube.com/@T3rmuxk1ng"
+          close-issue-reason: not_planned
+          close-issue-label: closed-by-bot
+          exempt-issue-labels: do-not-close,pinned
+          days-before-pr-stale: 30
+          days-before-pr-close: 5
+          stale-pr-message: "This PR has been inactive for 30 days and is now marked as stale."
+          close-pr-message: "This PR was closed due to inactivity."
+          close-pr-label: closed-by-bot
+          exempt-pr-labels: do-not-close

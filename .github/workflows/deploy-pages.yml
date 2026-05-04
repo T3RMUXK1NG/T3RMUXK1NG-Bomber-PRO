@@ -1,0 +1,394 @@
+name: Deploy RS T3rmuxk1ng Bomber PRO Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Generate Landing Page
+        run: |
+          mkdir -p _site
+          cat > _site/index.html << 'HTMLEOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>RS T3rmuxk1ng Bomber PRO</title>
+              <link rel="icon" href="https://avatars.githubusercontent.com/u/206160799?v=4">
+              <style>
+                  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap');
+                  * { margin: 0; padding: 0; box-sizing: border-box; }
+                  :root {
+                      --rs-red: #ff1744;
+                      --rs-green: #00e676;
+                      --rs-yellow: #ffd600;
+                      --rs-cyan: #00e5ff;
+                      --rs-bg: #0a0a0a;
+                      --rs-card: #111111;
+                      --rs-border: #222222;
+                  }
+                  body {
+                      background: var(--rs-bg);
+                      color: #e0e0e0;
+                      font-family: 'Rajdhani', sans-serif;
+                      overflow-x: hidden;
+                      min-height: 100vh;
+                  }
+                  .matrix-bg {
+                      position: fixed;
+                      top: 0; left: 0;
+                      width: 100%; height: 100%;
+                      z-index: -1;
+                      opacity: 0.06;
+                  }
+                  .glow-line {
+                      height: 2px;
+                      background: linear-gradient(90deg, transparent, var(--rs-red), var(--rs-green), var(--rs-cyan), transparent);
+                      animation: glow-pulse 3s ease-in-out infinite;
+                  }
+                  @keyframes glow-pulse {
+                      0%, 100% { opacity: 0.5; }
+                      50% { opacity: 1; }
+                  }
+                  .header {
+                      text-align: center;
+                      padding: 60px 20px 40px;
+                      position: relative;
+                  }
+                  .header::before {
+                      content: '';
+                      position: absolute;
+                      top: 0; left: 0; right: 0;
+                      height: 100%;
+                      background: radial-gradient(ellipse at center top, rgba(255,23,68,0.15) 0%, transparent 60%);
+                  }
+                  .logo-text {
+                      font-family: 'Orbitron', sans-serif;
+                      font-size: clamp(2rem, 6vw, 4rem);
+                      font-weight: 900;
+                      background: linear-gradient(135deg, var(--rs-red), var(--rs-yellow), var(--rs-green));
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      letter-spacing: 3px;
+                  }
+                  .subtitle {
+                      font-family: 'JetBrains Mono', monospace;
+                      font-size: clamp(0.9rem, 2vw, 1.2rem);
+                      color: var(--rs-cyan);
+                      margin-top: 10px;
+                  }
+                  .yt-cta {
+                      text-align: center;
+                      padding: 30px 20px;
+                      margin: 20px auto;
+                      max-width: 800px;
+                      background: linear-gradient(135deg, rgba(255,0,0,0.1), rgba(255,0,0,0.05));
+                      border: 1px solid rgba(255,0,0,0.3);
+                      border-radius: 16px;
+                      position: relative;
+                      overflow: hidden;
+                  }
+                  .yt-cta::before {
+                      content: '';
+                      position: absolute;
+                      top: -50%; left: -50%;
+                      width: 200%; height: 200%;
+                      background: conic-gradient(transparent, rgba(255,0,0,0.1), transparent 30%);
+                      animation: rotate 4s linear infinite;
+                  }
+                  @keyframes rotate { 100% { transform: rotate(360deg); } }
+                  .yt-cta h2 {
+                      font-family: 'Orbitron', sans-serif;
+                      font-size: 1.5rem;
+                      color: #ff1744;
+                      margin-bottom: 15px;
+                      position: relative;
+                  }
+                  .yt-btn {
+                      display: inline-block;
+                      padding: 16px 40px;
+                      background: #ff0000;
+                      color: white;
+                      text-decoration: none;
+                      border-radius: 50px;
+                      font-family: 'Orbitron', sans-serif;
+                      font-size: 1.1rem;
+                      font-weight: 700;
+                      letter-spacing: 2px;
+                      transition: all 0.3s ease;
+                      position: relative;
+                      box-shadow: 0 0 30px rgba(255,0,0,0.4);
+                  }
+                  .yt-btn:hover {
+                      background: #cc0000;
+                      transform: scale(1.05);
+                      box-shadow: 0 0 50px rgba(255,0,0,0.6);
+                  }
+                  .features {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                      gap: 20px;
+                      padding: 40px 20px;
+                      max-width: 1200px;
+                      margin: 0 auto;
+                  }
+                  .feature-card {
+                      background: var(--rs-card);
+                      border: 1px solid var(--rs-border);
+                      border-radius: 12px;
+                      padding: 30px;
+                      transition: all 0.3s ease;
+                      position: relative;
+                      overflow: hidden;
+                  }
+                  .feature-card::before {
+                      content: '';
+                      position: absolute;
+                      top: 0; left: 0;
+                      width: 100%; height: 3px;
+                      background: linear-gradient(90deg, var(--rs-red), var(--rs-green));
+                  }
+                  .feature-card:hover {
+                      border-color: var(--rs-green);
+                      transform: translateY(-5px);
+                      box-shadow: 0 10px 30px rgba(0,230,118,0.1);
+                  }
+                  .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+                  .feature-title {
+                      font-family: 'Orbitron', sans-serif;
+                      font-size: 1.1rem;
+                      color: var(--rs-green);
+                      margin-bottom: 10px;
+                  }
+                  .feature-desc { font-size: 0.95rem; color: #999; line-height: 1.6; }
+                  .install-section {
+                      max-width: 800px;
+                      margin: 40px auto;
+                      padding: 30px 20px;
+                  }
+                  .install-section h2 {
+                      font-family: 'Orbitron', sans-serif;
+                      text-align: center;
+                      color: var(--rs-cyan);
+                      margin-bottom: 20px;
+                  }
+                  .code-block {
+                      background: #1a1a1a;
+                      border: 1px solid var(--rs-border);
+                      border-radius: 10px;
+                      padding: 20px;
+                      margin: 15px 0;
+                      font-family: 'JetBrains Mono', monospace;
+                      font-size: 0.85rem;
+                      color: var(--rs-green);
+                      overflow-x: auto;
+                      position: relative;
+                  }
+                  .code-block .copy-btn {
+                      position: absolute;
+                      top: 10px; right: 10px;
+                      background: var(--rs-border);
+                      border: none;
+                      color: #999;
+                      padding: 4px 10px;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      font-family: 'JetBrains Mono', monospace;
+                      font-size: 0.7rem;
+                  }
+                  .code-block .copy-btn:hover { background: var(--rs-green); color: #000; }
+                  .stats {
+                      display: flex;
+                      justify-content: center;
+                      flex-wrap: wrap;
+                      gap: 30px;
+                      padding: 40px 20px;
+                      max-width: 900px;
+                      margin: 0 auto;
+                  }
+                  .stat-item { text-align: center; }
+                  .stat-number {
+                      font-family: 'Orbitron', sans-serif;
+                      font-size: 2.5rem;
+                      font-weight: 900;
+                      color: var(--rs-red);
+                  }
+                  .stat-label { font-size: 0.9rem; color: #777; margin-top: 5px; }
+                  .footer {
+                      text-align: center;
+                      padding: 40px 20px;
+                      border-top: 1px solid var(--rs-border);
+                      margin-top: 60px;
+                  }
+                  .footer a {
+                      color: var(--rs-cyan);
+                      text-decoration: none;
+                      margin: 0 10px;
+                      font-family: 'JetBrains Mono', monospace;
+                      font-size: 0.85rem;
+                  }
+                  .footer a:hover { color: var(--rs-green); }
+                  @media (max-width: 600px) {
+                      .header { padding: 40px 15px 30px; }
+                      .features { padding: 20px 15px; }
+                      .yt-btn { padding: 12px 30px; font-size: 0.9rem; }
+                  }
+              </style>
+          </head>
+          <body>
+          <canvas class="matrix-bg" id="matrixCanvas"></canvas>
+          <div class="glow-line"></div>
+          <div class="header">
+              <div class="logo-text">RS T3RMUXK1NG</div>
+              <div class="logo-text" style="font-size: clamp(1.2rem, 3.5vw, 2.2rem); margin-top: 5px;">BOMBER PRO</div>
+              <div class="subtitle">SMS • Call • Mail Bomber | Next Level Edition</div>
+              <div style="margin-top: 15px;">
+                  <a href="https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO" style="color: var(--rs-cyan); font-family: 'JetBrains Mono', monospace; text-decoration: none;">⭐ Star on GitHub</a>
+              </div>
+          </div>
+          <div class="glow-line"></div>
+          <div class="yt-cta">
+              <h2>SUBSCRIBE TO T3RMUXK1NG</h2>
+              <p style="color: #ccc; margin-bottom: 20px; position: relative;">Learn Ethical Hacking, Termux Tricks & Security Tools — New Videos Every Week!</p>
+              <a href="https://youtube.com/@T3rmuxk1ng" target="_blank" class="yt-btn">YOUTUBE.COM/@T3RMUXK1NG</a>
+          </div>
+          <div class="stats">
+              <div class="stat-item">
+                  <div class="stat-number">3</div>
+                  <div class="stat-label">Attack Modes</div>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">APIs</div>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number">500</div>
+                  <div class="stat-label">Max SMS</div>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number">80+</div>
+                  <div class="stat-label">RS Projects</div>
+              </div>
+          </div>
+          <div class="features">
+              <div class="feature-card">
+                  <div class="feature-icon">💬</div>
+                  <div class="feature-title">SMS Bomb</div>
+                  <div class="feature-desc">Send unlimited SMS messages to any target. Supports international numbers with multiple API providers for maximum delivery rate.</div>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon">📞</div>
+                  <div class="feature-title">Call Bomb</div>
+                  <div class="feature-desc">Make multiple calls to Indian targets. Fast and efficient with abuse protection to prevent API overload.</div>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon">📧</div>
+                  <div class="feature-title">Mail Bomb</div>
+                  <div class="feature-desc">Send bulk emails to any target address. Universal support with up to 200 emails per session.</div>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon">⚡</div>
+                  <div class="feature-title">Multithreaded</div>
+                  <div class="feature-desc">Parallel execution with configurable thread count. Fast bombing with configurable delay between attacks.</div>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon">🔄</div>
+                  <div class="feature-title">Auto Update</div>
+                  <div class="feature-desc">Automatic update checks on every launch. Stay on the latest version without manual intervention.</div>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon">🌍</div>
+                  <div class="feature-title">International</div>
+                  <div class="feature-desc">Supports most countries for SMS bombing. International API support with flexible JSON-based provider system.</div>
+              </div>
+          </div>
+          <div class="install-section">
+              <h2>QUICK INSTALL (TERMUX)</h2>
+              <div class="code-block">
+                  <button class="copy-btn" onclick="copyCode(this)">COPY</button>
+                  pkg install git python -y && git clone https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO.git && cd RS-T3rmuxk1ng-Bomber-PRO && chmod +x RS-Bomber.sh && ./RS-Bomber.sh
+              </div>
+              <p style="text-align: center; color: #666; margin-top: 15px;">Copy and paste this in Termux to install and run</p>
+          </div>
+          <div class="glow-line"></div>
+          <div class="yt-cta" style="margin-bottom: 0;">
+              <h2>DON'T MISS OUT!</h2>
+              <p style="color: #ccc; margin-bottom: 20px; position: relative;">Join the T3rmuxk1ng community — Hacking Tutorials, Termux Tricks, Security Tool Demos</p>
+              <a href="https://youtube.com/@T3rmuxk1ng" target="_blank" class="yt-btn">SUBSCRIBE NOW</a>
+          </div>
+          <div class="footer">
+              <a href="https://youtube.com/@T3rmuxk1ng">YouTube</a>
+              <a href="https://github.com/rajsaraswati-jatavv">GitHub</a>
+              <a href="https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO">Repo</a>
+              <a href="https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO/issues">Issues</a>
+              <p style="color: #444; margin-top: 15px; font-size: 0.8rem;">Created by RS JATAV | T3rmuxk1ng | Educational Purposes Only | GPL v3</p>
+          </div>
+          <script>
+              const canvas = document.getElementById('matrixCanvas');
+              const ctx = canvas.getContext('2d');
+              canvas.width = window.innerWidth;
+              canvas.height = window.innerHeight;
+              const chars = 'RS01T3RMUXK1NGBOMBERPRO';
+              const charArr = chars.split('');
+              const fontSize = 14;
+              const columns = canvas.width / fontSize;
+              const drops = [];
+              for (let i = 0; i < columns; i++) { drops[i] = 1; }
+              function drawMatrix() {
+                  ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+                  ctx.fillStyle = '#ff1744';
+                  ctx.font = fontSize + 'px JetBrains Mono';
+                  for (let i = 0; i < drops.length; i++) {
+                      const text = charArr[Math.floor(Math.random() * charArr.length)];
+                      ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) { drops[i] = 0; }
+                      drops[i]++;
+                  }
+              }
+              setInterval(drawMatrix, 50);
+              window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+              function copyCode(btn) {
+                  const code = btn.parentElement.textContent.replace('COPY', '').trim();
+                  navigator.clipboard.writeText(code).then(() => { btn.textContent = 'COPIED!'; setTimeout(() => { btn.textContent = 'COPY'; }, 2000); });
+              }
+          </script>
+          </body>
+          </html>
+          HTMLEOF
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

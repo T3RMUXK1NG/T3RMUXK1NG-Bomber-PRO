@@ -1,0 +1,28 @@
+# RS T3rmuxk1ng Bomber PRO
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Runtime
+.update
+.notify
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp
+*.log
+*.tmp
+*.bak
