@@ -38,6 +38,9 @@ import argparse
 import zipfile
 from io import BytesIO
 
+# Force UTF-8 encoding for terminals that don't support it
+os.environ.setdefault('PYTHONIOENCODING', 'utf-8')
+
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from utils.decorators import MessageDecorator
@@ -155,8 +158,8 @@ def do_zip_update():
                         filename[0].replace(dir_name, "."),
                         filename[1])
                     source = zip_file.open(member)
-                    target = open(new_filename, "wb")
-                    with source, target:
+                    os.makedirs(os.path.dirname(new_filename), exist_ok=True)
+                    with source, open(new_filename, "wb") as target:
                         shutil.copyfileobj(source, target)
             success = True
         except Exception:
@@ -432,8 +435,12 @@ if sys.version_info[0] != 3:
     sys.exit()
 
 try:
-    country_codes = readisdc()["isdcodes"]
+    isd_data = readisdc()
+    country_codes = isd_data.get("isdcodes", {})
 except FileNotFoundError:
+    update()
+except (json.JSONDecodeError, KeyError, TypeError):
+    mesgdcrt.FailureMessage("Corrupted isdcodes.json - updating...")
     update()
 
 __VERSION__ = get_version()
@@ -449,9 +456,9 @@ DEBUG_MODE = False
 description = """RS T3rmuxk1ng Bomber PRO - Next Level Edition
 
 RS Bomber PRO can be used for many purposes which includes -
-	 Exposing the vulnerable APIs over Internet
-	 Friendly Spamming
-	 Testing Your Spam Detector and more ....
+         Exposing the vulnerable APIs over Internet
+         Friendly Spamming
+         Testing Your Spam Detector and more ....
 
 RS Bomber PRO is not intended for malicious uses.
 

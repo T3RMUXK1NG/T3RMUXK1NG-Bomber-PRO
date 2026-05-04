@@ -10,6 +10,7 @@ class APIProvider:
     api_providers = []
     delay = 0
     status = True
+    lock = threading.Lock()
 
     # RS Branding
     RS_REPO = "RS-T3rmuxk1ng-Bomber-PRO"
@@ -26,7 +27,7 @@ class APIProvider:
         self.target = target
         self.mode = mode
         self.index = 0
-        self.lock = threading.Lock()
+
         self.api_version = PROVIDERS.get("version", "2")
         APIProvider.delay = delay
         providers = PROVIDERS.get(mode.lower(), {})
@@ -78,19 +79,23 @@ class APIProvider:
         return identifier in response.text.lower()
 
     def hit(self):
+        acquired = False
+        result = False
         try:
             if not APIProvider.status:
-                return
+                return None
             time.sleep(APIProvider.delay)
-            self.lock.acquire()
+            APIProvider.lock.acquire()
+            acquired = True
             response = self.request()
             if response is False:
                 self.remove()
             elif response is None:
                 APIProvider.status = False
-            return response
+            result = response
         except Exception:
-            response = False
+            result = False
         finally:
-            self.lock.release()
-            return response
+            if acquired:
+                APIProvider.lock.release()
+        return result

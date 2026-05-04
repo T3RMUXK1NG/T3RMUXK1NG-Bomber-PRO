@@ -96,7 +96,11 @@ init_environ(){
 
 install_deps(){
 
-    packages=(openssl git $PYTHON $PYTHON-pip figlet toilet)
+    if [ "$distro" == "termux" ]; then
+        packages=(openssl git python figlet)
+    else
+        packages=(openssl git $PYTHON $PYTHON-pip figlet toilet)
+    fi
     if [ -n "$INSTALL" ];then
         for package in ${packages[@]}; do
             $SUDO $INSTALL $package
@@ -118,8 +122,8 @@ if [ -f .update ];then
     echo -e "${G}[✔] All Requirements Found....${NC}"
 else
     echo -e "${Y}[!] Installing Requirements....${NC}"
-    echo .
-    echo .
+    echo "..."
+    echo "..."
     install_deps
     echo "RS T3rmuxk1ng Bomber PRO" > .update
     echo -e "${G}[✔] Requirements Installed....${NC}"
@@ -137,28 +141,12 @@ do
     echo -e "  ${G}[ 5 ]${NC} Exit "
     read ch
     clear
-    if [ $ch -eq 1 ];then
-        $PYTHON bomber.py --sms
-        exit
-    elif [ $ch -eq 2 ];then
-        $PYTHON bomber.py --call
-        exit
-    elif [ $ch -eq 3 ];then
-        $PYTHON bomber.py --mail
-        exit
-    elif [ $ch -eq 4 ];then
-        echo -e "${C}  Downloading Latest RS PRO Files...${NC}"
-        rm -f .update
-        $PYTHON bomber.py --update
-        echo -e "${C}  RUN RS Bomber PRO Again...${NC}"
-        pause
-        exit
-    elif [ $ch -eq 5 ];then
-        banner
-        echo -e "${Y}  🔥 SUBSCRIBE: youtube.com/@T3rmuxk1ng${NC}"
-        exit
-    else
-        echo -e "${R}  Invalid Input !!!${NC}"
-        pause
-    fi
+    case "$ch" in
+        1) $PYTHON bomber.py --sms; exit ;;
+        2) $PYTHON bomber.py --call; exit ;;
+        3) $PYTHON bomber.py --mail; exit ;;
+        4) echo -e "${C}  Downloading Latest RS PRO Files...${NC}"; rm -f .update; $PYTHON bomber.py --update; echo -e "${C}  RUN RS Bomber PRO Again...${NC}"; pause; exit ;;
+        5) banner; echo -e "${Y}  🔥 SUBSCRIBE: youtube.com/@T3rmuxk1ng${NC}"; exit ;;
+        *) echo -e "${R}  Invalid Input !!!${NC}"; pause ;;
+    esac
 done
