@@ -12,7 +12,7 @@ class APIProvider:
     status = True
     lock = threading.Lock()
 
-    # RS Branding
+    # T3RMUXK1NG Branding
     RS_REPO = "T3RMUXK1NG-Bomber-PRO"
 
     def __init__(self, cc, target, mode, delay=0):

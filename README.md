@@ -208,13 +208,13 @@ Due to overuse, a bunch of APIs have been taken offline. It's normal if you don'
 
 **T3RMUXK1NG** is a LEGENDARY Security Developer and ELITE Ethical Hacker from India with **80+ security projects** on GitHub. Creator of:
 
-- 🔥 RS WiFi Cracker PRO
-- 🔥 RS Bluetooth Nexus
+- 🔥 T3RMUXK1NG WiFi Cracker PRO
+- 🔥 T3RMUXK1NG Bluetooth Nexus
 - 🔥 RS Attack Toolkit
 - 🔥 T3rmuxk1ng NetHunter PRO
 - 🔥 Holly AI Girlfriend
 - 🔥 T3RMUXK1NG Ultimate Hacking Course
-- 🔥 RS Memory Skill (ULTIMATE NEXUS v4.0)
+- 🔥 T3RMUXK1NG Memory Skill (ULTIMATE NEXUS v4.0)
 - 🔥 T3rmuxk1ng Bomber PRO
 
 > 🎬 **Subscribe to T3rmuxk1ng on YouTube** for weekly hacking tutorials, Termux tricks, and security tool demos!

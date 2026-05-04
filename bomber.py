@@ -56,7 +56,7 @@ except ImportError:
         " install all required packages")
     sys.exit(1)
 
-# RS Branding Constants
+# T3RMUXK1NG Branding Constants
 T3RMUXK1NG_AUTHOR = "T3RMUXK1NG | T3rmuxk1ng"
 RS_YOUTUBE = "https://youtube.com/@T3rmuxk1ng"
 RS_GITHUB = "https://github.com/T3RMUXK1NG"
