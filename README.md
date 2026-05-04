@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🔥 RS T3rmuxk1ng Bomber PRO
+# 🔥 T3rmuxk1ng Bomber PRO
 
 ### SMS • Call • Mail Bomber — Next Level Edition
 
-<img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/rs-logo.png" alt="RS T3rmuxk1ng Bomber PRO" width="300"/>
+<img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/t3rmuxk1ng-logo.png" alt="T3rmuxk1ng Bomber PRO" width="300"/>
 
-<img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/rs-banner.png" alt="RS T3rmuxk1ng Bomber PRO Banner" width="700"/>
+<img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/rs-banner.png" alt="T3rmuxk1ng Bomber PRO Banner" width="700"/>
 
 [![YouTube](https://img.shields.io/badge/SUBSCRIBE-T3rmuxk1ng-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@T3rmuxk1ng)
 [![GitHub](https://img.shields.io/badge/GitHub-RS%20T3RMUXK1NG-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
@@ -33,9 +33,9 @@
 
 ---
 
-## ⚡ What is RS T3rmuxk1ng Bomber PRO?
+## ⚡ What is T3rmuxk1ng Bomber PRO?
 
-RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool, rebranded and enhanced by **T3RMUXK1NG | T3rmuxk1ng**. It's an open-source SMS/Call/Mail bombing tool designed for Linux and Termux environments, built for **educational and research purposes**.
+T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool, rebranded and enhanced by **T3RMUXK1NG | T3rmuxk1ng**. It's an open-source SMS/Call/Mail bombing tool designed for Linux and Termux environments, built for **educational and research purposes**.
 
 ### 🆕 What Makes This PRO Edition Different?
 
@@ -211,11 +211,11 @@ Due to overuse, a bunch of APIs have been taken offline. It's normal if you don'
 - 🔥 RS WiFi Cracker PRO
 - 🔥 RS Bluetooth Nexus
 - 🔥 RS Attack Toolkit
-- 🔥 RS T3rmuxk1ng NetHunter PRO
+- 🔥 T3rmuxk1ng NetHunter PRO
 - 🔥 Holly AI Girlfriend
 - 🔥 T3RMUXK1NG Ultimate Hacking Course
 - 🔥 RS Memory Skill (ULTIMATE NEXUS v4.0)
-- 🔥 RS T3rmuxk1ng Bomber PRO
+- 🔥 T3rmuxk1ng Bomber PRO
 
 > 🎬 **Subscribe to T3rmuxk1ng on YouTube** for weekly hacking tutorials, Termux tricks, and security tool demos!
 

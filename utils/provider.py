@@ -5,7 +5,7 @@ import time
 
 
 class APIProvider:
-    """RS T3rmuxk1ng Bomber PRO - API Provider Module"""
+    """T3rmuxk1ng Bomber PRO - API Provider Module"""
 
     api_providers = []
     delay = 0

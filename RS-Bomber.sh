@@ -2,7 +2,7 @@
 
 ################################################################################
 #                                                                              #
-#  RS T3rmuxk1ng Bomber PRO - Shell Launcher                                  #
+#  T3rmuxk1ng Bomber PRO - Shell Launcher                                  #
 #                                                                              #
 #  Created by: T3RMUXK1NG | T3rmuxk1ng                                          #
 #  YouTube: https://youtube.com/@T3rmuxk1ng                                   #
@@ -57,7 +57,7 @@ banner() {
     echo -e "     ▒▒    ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒"
     echo -e "${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
-    echo -e "${Y}  🔥 RS T3rmuxk1ng Bomber PRO - Next Level Edition 🔥${NC}"
+    echo -e "${Y}  🔥 T3rmuxk1ng Bomber PRO - Next Level Edition 🔥${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
     echo -e "${C}  👤 Created by : T3RMUXK1NG | T3rmuxk1ng${NC}"
     echo -e "${C}  🎬 YouTube    : ${W}https://youtube.com/@T3rmuxk1ng${NC}"
@@ -125,7 +125,7 @@ else
     echo "..."
     echo "..."
     install_deps
-    echo "RS T3rmuxk1ng Bomber PRO" > .update
+    echo "T3rmuxk1ng Bomber PRO" > .update
     echo -e "${G}[✔] Requirements Installed....${NC}"
     pause
 fi

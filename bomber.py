@@ -10,7 +10,7 @@
 #  ██║  ██║███████╗███████║   ██║   ██║  ██║██╔╝ ╚██╗                          #
 #  ╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝   ╚═╝                          #
 #                                                                              #
-#  RS T3rmuxk1ng Bomber PRO - Next Level Edition                              #
+#  T3rmuxk1ng Bomber PRO - Next Level Edition                              #
 #                                                                              #
 #  Created by: T3RMUXK1NG | T3rmuxk1ng                                          #
 #  YouTube: https://youtube.com/@T3rmuxk1ng                                   #
@@ -95,7 +95,7 @@ def bann_text():
       ██    █████▒ ▒████▒ ██   ██ █████▒
       ▒▒    ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
-{Fore.YELLOW}  🔥 RS T3rmuxk1ng Bomber PRO - Next Level Edition 🔥{Style.RESET_ALL}
+{Fore.YELLOW}  🔥 T3rmuxk1ng Bomber PRO - Next Level Edition 🔥{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 {Fore.CYAN}  👤 Created by : T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  🎬 YouTube    : {Fore.WHITE}https://youtube.com/@T3rmuxk1ng{Style.RESET_ALL}
@@ -105,7 +105,7 @@ def bann_text():
     if ASCII_MODE:
         logo = f"""
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
-{Fore.YELLOW}  RS T3rmuxk1ng Bomber PRO - Next Level Edition{Style.RESET_ALL}
+{Fore.YELLOW}  T3rmuxk1ng Bomber PRO - Next Level Edition{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 {Fore.CYAN}  Created by : T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  YouTube    : https://youtube.com/@T3rmuxk1ng{Style.RESET_ALL}
@@ -166,7 +166,7 @@ def do_zip_update():
             mesgdcrt.FailureMessage("Error occurred while extracting !!")
     if success:
         mesgdcrt.SuccessMessage(
-            "RS T3rmuxk1ng Bomber PRO was updated to the latest version")
+            "T3rmuxk1ng Bomber PRO was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
@@ -199,7 +199,7 @@ def do_git_update():
 
     if success:
         mesgdcrt.SuccessMessage(
-            "RS T3rmuxk1ng Bomber PRO was updated to the latest version")
+            "T3rmuxk1ng Bomber PRO was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
@@ -232,7 +232,7 @@ def check_for_updates():
         mesgdcrt.GeneralMessage("Starting update...")
         update()
     else:
-        mesgdcrt.SuccessMessage("RS T3rmuxk1ng Bomber PRO is up-to-date")
+        mesgdcrt.SuccessMessage("T3rmuxk1ng Bomber PRO is up-to-date")
         mesgdcrt.GeneralMessage("Starting T3RMUXK1NG Bomber PRO")
 
 
@@ -453,7 +453,7 @@ RESET_ALL = Style.RESET_ALL
 ASCII_MODE = False
 DEBUG_MODE = False
 
-description = """RS T3rmuxk1ng Bomber PRO - Next Level Edition
+description = """T3rmuxk1ng Bomber PRO - Next Level Edition
 
 T3RMUXK1NG Bomber PRO can be used for many purposes which includes -
          Exposing the vulnerable APIs over Internet

@@ -1,4 +1,4 @@
-name: Deploy RS T3rmuxk1ng Bomber PRO Pages
+name: Deploy T3rmuxk1ng Bomber PRO Pages
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
           <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>RS T3rmuxk1ng Bomber PRO</title>
+              <title>T3rmuxk1ng Bomber PRO</title>
               <link rel="icon" href="https://avatars.githubusercontent.com/u/206160799?v=4">
               <style>
                   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap');
