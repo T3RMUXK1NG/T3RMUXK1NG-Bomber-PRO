@@ -4,9 +4,9 @@
 #                                                                              #
 #  RS T3rmuxk1ng Bomber PRO - Shell Launcher                                  #
 #                                                                              #
-#  Created by: RS JATAV | T3rmuxk1ng                                          #
+#  Created by: RS T3RMUXK1NG | T3rmuxk1ng                                          #
 #  YouTube: https://youtube.com/@T3rmuxk1ng                                   #
-#  GitHub: https://github.com/rajsaraswati-jatavv                             #
+#  GitHub: https://github.com/T3RMUXK1NG                             #
 #                                                                              #
 #  Based on TBomb by TheSpeedX                                                #
 #                                                                              #
@@ -59,9 +59,9 @@ banner() {
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
     echo -e "${Y}  🔥 RS T3rmuxk1ng Bomber PRO - Next Level Edition 🔥${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
-    echo -e "${C}  👤 Created by : RS JATAV | T3rmuxk1ng${NC}"
+    echo -e "${C}  👤 Created by : RS T3RMUXK1NG | T3rmuxk1ng${NC}"
     echo -e "${C}  🎬 YouTube    : ${W}https://youtube.com/@T3rmuxk1ng${NC}"
-    echo -e "${C}  💻 GitHub     : ${W}https://github.com/rajsaraswati-jatavv${NC}"
+    echo -e "${C}  💻 GitHub     : ${W}https://github.com/T3RMUXK1NG${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
     echo -e "${R}  ⚡ SUBSCRIBE to T3rmuxk1ng on YouTube for Hacking Tutorials!${NC}"
     echo -e "${G}═══════════════════════════════════════════════════════════════${NC}"
@@ -145,7 +145,7 @@ do
         1) $PYTHON bomber.py --sms; exit ;;
         2) $PYTHON bomber.py --call; exit ;;
         3) $PYTHON bomber.py --mail; exit ;;
-        4) echo -e "${C}  Downloading Latest RS PRO Files...${NC}"; rm -f .update; $PYTHON bomber.py --update; echo -e "${C}  RUN RS Bomber PRO Again...${NC}"; pause; exit ;;
+        4) echo -e "${C}  Downloading Latest T3RMUXK1NG PRO Files...${NC}"; rm -f .update; $PYTHON bomber.py --update; echo -e "${C}  RUN RS Bomber PRO Again...${NC}"; pause; exit ;;
         5) banner; echo -e "${Y}  🔥 SUBSCRIBE: youtube.com/@T3rmuxk1ng${NC}"; exit ;;
         *) echo -e "${R}  Invalid Input !!!${NC}"; pause ;;
     esac

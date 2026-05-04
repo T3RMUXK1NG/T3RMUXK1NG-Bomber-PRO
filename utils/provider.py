@@ -13,14 +13,14 @@ class APIProvider:
     lock = threading.Lock()
 
     # RS Branding
-    RS_REPO = "RS-T3rmuxk1ng-Bomber-PRO"
+    RS_REPO = "T3RMUXK1NG-Bomber-PRO"
 
     def __init__(self, cc, target, mode, delay=0):
         try:
             PROVIDERS = json.load(open('apidata.json', 'r'))
         except Exception:
             PROVIDERS = requests.get(
-                f"https://github.com/rajsaraswati-jatavv/{self.RS_REPO}/raw/main/apidata.json"
+                f"https://github.com/T3RMUXK1NG/{self.RS_REPO}/raw/main/apidata.json"
             ).json()
         self.config = None
         self.cc = cc

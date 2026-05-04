@@ -4,15 +4,15 @@
 
 ### SMS • Call • Mail Bomber — Next Level Edition
 
-<img src="https://raw.githubusercontent.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO/main/rs-logo.png" alt="RS T3rmuxk1ng Bomber PRO" width="300"/>
+<img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/rs-logo.png" alt="RS T3rmuxk1ng Bomber PRO" width="300"/>
 
-<img src="https://raw.githubusercontent.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO/main/rs-banner.png" alt="RS T3rmuxk1ng Bomber PRO Banner" width="700"/>
+<img src="https://raw.githubusercontent.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/main/rs-banner.png" alt="RS T3rmuxk1ng Bomber PRO Banner" width="700"/>
 
 [![YouTube](https://img.shields.io/badge/SUBSCRIBE-T3rmuxk1ng-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@T3rmuxk1ng)
-[![GitHub](https://img.shields.io/badge/GitHub-RS%20JATAV-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rajsaraswati-jatavv)
-[![Stars](https://img.shields.io/github/stars/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO?colorA=23272a&colorB=ff4500&style=for-the-badge)](https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO/stargazers)
-[![Issues](https://img.shields.io/github/issues/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO?colorA=23272a&colorB=007bff&style=for-the-badge)](https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO/issues)
-[![License](https://img.shields.io/badge/License-GPL%20v3-blue?style=for-the-badge)](https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-RS%20JATAV-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
+[![Stars](https://img.shields.io/github/stars/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO?colorA=23272a&colorB=ff4500&style=for-the-badge)](https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/stargazers)
+[![Issues](https://img.shields.io/github/issues/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO?colorA=23272a&colorB=007bff&style=for-the-badge)](https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/issues)
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue?style=for-the-badge)](https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO/blob/main/LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
 </div>
@@ -35,7 +35,7 @@
 
 ## ⚡ What is RS T3rmuxk1ng Bomber PRO?
 
-RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool, rebranded and enhanced by **RS JATAV | T3rmuxk1ng**. It's an open-source SMS/Call/Mail bombing tool designed for Linux and Termux environments, built for **educational and research purposes**.
+RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool, rebranded and enhanced by **RS T3RMUXK1NG | T3rmuxk1ng**. It's an open-source SMS/Call/Mail bombing tool designed for Linux and Termux environments, built for **educational and research purposes**.
 
 ### 🆕 What Makes This PRO Edition Different?
 
@@ -59,8 +59,8 @@ RS T3rmuxk1ng Bomber PRO is the **Next Level Edition** of the famous TBomb tool,
 
 ```bash
 pkg install git python -y
-git clone https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO.git
-cd RS-T3rmuxk1ng-Bomber-PRO
+git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git
+cd T3RMUXK1NG-Bomber-PRO
 chmod +x RS-Bomber.sh
 ./RS-Bomber.sh
 ```
@@ -69,8 +69,8 @@ chmod +x RS-Bomber.sh
 
 ```bash
 sudo apt install git python3 python3-pip -y
-git clone https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO.git
-cd RS-T3rmuxk1ng-Bomber-PRO
+git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git
+cd T3RMUXK1NG-Bomber-PRO
 bash RS-Bomber.sh
 ```
 
@@ -84,7 +84,7 @@ python3 bomber.py
 ### One-Line Install (Termux)
 
 ```bash
-pkg install git python -y && git clone https://github.com/rajsaraswati-jatavv/RS-T3rmuxk1ng-Bomber-PRO.git && cd RS-T3rmuxk1ng-Bomber-PRO && chmod +x RS-Bomber.sh && ./RS-Bomber.sh
+pkg install git python -y && git clone https://github.com/T3RMUXK1NG/T3RMUXK1NG-Bomber-PRO.git && cd T3RMUXK1NG-Bomber-PRO && chmod +x RS-Bomber.sh && ./RS-Bomber.sh
 ```
 
 ---
@@ -197,16 +197,16 @@ Due to overuse, a bunch of APIs have been taken offline. It's normal if you don'
 
 ---
 
-## 👤 About RS JATAV | T3rmuxk1ng
+## 👤 About RS T3RMUXK1NG | T3rmuxk1ng
 
 <div align="center">
 
 [![YouTube](https://img.shields.io/badge/YouTube-T3rmuxk1ng-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@T3rmuxk1ng)
-[![GitHub](https://img.shields.io/badge/GitHub-rajsaraswati--jatavv-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/rajsaraswati-jatavv)
+[![GitHub](https://img.shields.io/badge/GitHub-t3rmuxk1ng--jatavv-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/T3RMUXK1NG)
 
 </div>
 
-**RS JATAV** is a LEGENDARY Security Developer and ELITE Ethical Hacker from India with **80+ security projects** on GitHub. Creator of:
+**RS T3RMUXK1NG** is a LEGENDARY Security Developer and ELITE Ethical Hacker from India with **80+ security projects** on GitHub. Creator of:
 
 - 🔥 RS WiFi Cracker PRO
 - 🔥 RS Bluetooth Nexus
@@ -235,7 +235,7 @@ This tool is for **educational and research purposes only**. The author is **not
 
 ## 📜 Credits
 
-- **RS JATAV | T3rmuxk1ng** — PRO Edition branding, enhancements, and features
+- **RS T3RMUXK1NG | T3rmuxk1ng** — PRO Edition branding, enhancements, and features
 - **TheSpeedX** ([TBomb](https://github.com/TheSpeedX/TBomb)) — Original TBomb creator
 - **t0xic0der** — Contributor
 - **scpketer** — Contributor

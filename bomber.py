@@ -12,9 +12,9 @@
 #                                                                              #
 #  RS T3rmuxk1ng Bomber PRO - Next Level Edition                              #
 #                                                                              #
-#  Created by: RS JATAV | T3rmuxk1ng                                          #
+#  Created by: RS T3RMUXK1NG | T3rmuxk1ng                                          #
 #  YouTube: https://youtube.com/@T3rmuxk1ng                                   #
-#  GitHub: https://github.com/rajsaraswati-jatavv                             #
+#  GitHub: https://github.com/T3RMUXK1NG                             #
 #                                                                              #
 #  Based on TBomb by TheSpeedX                                                #
 #  Original: https://github.com/TheSpeedX/TBomb                               #
@@ -57,10 +57,10 @@ except ImportError:
     sys.exit(1)
 
 # RS Branding Constants
-RS_AUTHOR = "RS JATAV | T3rmuxk1ng"
+RS_AUTHOR = "RS T3RMUXK1NG | T3rmuxk1ng"
 RS_YOUTUBE = "https://youtube.com/@T3rmuxk1ng"
-RS_GITHUB = "https://github.com/rajsaraswati-jatavv"
-RS_REPO = "RS-T3rmuxk1ng-Bomber-PRO"
+RS_GITHUB = "https://github.com/T3RMUXK1NG"
+RS_REPO = "T3RMUXK1NG-Bomber-PRO"
 
 
 def readisdc():
@@ -97,9 +97,9 @@ def bann_text():
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 {Fore.YELLOW}  🔥 RS T3rmuxk1ng Bomber PRO - Next Level Edition 🔥{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
-{Fore.CYAN}  👤 Created by : RS JATAV | T3rmuxk1ng{Style.RESET_ALL}
+{Fore.CYAN}  👤 Created by : RS T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  🎬 YouTube    : {Fore.WHITE}https://youtube.com/@T3rmuxk1ng{Style.RESET_ALL}
-{Fore.CYAN}  💻 GitHub     : {Fore.WHITE}https://github.com/rajsaraswati-jatavv{Style.RESET_ALL}
+{Fore.CYAN}  💻 GitHub     : {Fore.WHITE}https://github.com/T3RMUXK1NG{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 """
     if ASCII_MODE:
@@ -107,9 +107,9 @@ def bann_text():
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 {Fore.YELLOW}  RS T3rmuxk1ng Bomber PRO - Next Level Edition{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
-{Fore.CYAN}  Created by : RS JATAV | T3rmuxk1ng{Style.RESET_ALL}
+{Fore.CYAN}  Created by : RS T3RMUXK1NG | T3rmuxk1ng{Style.RESET_ALL}
 {Fore.CYAN}  YouTube    : https://youtube.com/@T3rmuxk1ng{Style.RESET_ALL}
-{Fore.CYAN}  GitHub     : https://github.com/rajsaraswati-jatavv{Style.RESET_ALL}
+{Fore.CYAN}  GitHub     : https://github.com/T3RMUXK1NG{Style.RESET_ALL}
 {Fore.GREEN}═══════════════════════════════════════════════════════════════{Style.RESET_ALL}
 """
     version = "Version: " + __VERSION__
@@ -139,12 +139,12 @@ def format_phone(num):
 def do_zip_update():
     success = False
     if DEBUG_MODE:
-        zip_url = f"https://github.com/rajsaraswati-jatavv/{RS_REPO}/archive/dev.zip"
+        zip_url = f"https://github.com/T3RMUXK1NG/{RS_REPO}/archive/dev.zip"
         dir_name = f"{RS_REPO}-dev"
     else:
-        zip_url = f"https://github.com/rajsaraswati-jatavv/{RS_REPO}/archive/main.zip"
+        zip_url = f"https://github.com/T3RMUXK1NG/{RS_REPO}/archive/main.zip"
         dir_name = f"{RS_REPO}-main"
-    print(ALL_COLORS[0] + "Downloading RS PRO Update ... " + RESET_ALL)
+    print(ALL_COLORS[0] + "Downloading T3RMUXK1NG PRO Update ... " + RESET_ALL)
     response = requests.get(zip_url)
     if response.status_code == 200:
         zip_content = response.content
@@ -172,7 +172,7 @@ def do_zip_update():
     else:
         mesgdcrt.FailureMessage("Unable to update RS Bomber PRO.")
         mesgdcrt.WarningMessage(
-            f"Grab The Latest one From https://github.com/rajsaraswati-jatavv/{RS_REPO}")
+            f"Grab The Latest one From https://github.com/T3RMUXK1NG/{RS_REPO}")
 
     sys.exit()
 
@@ -180,7 +180,7 @@ def do_zip_update():
 def do_git_update():
     success = False
     try:
-        print(ALL_COLORS[0] + "UPDATING RS PRO " + RESET_ALL, end='')
+        print(ALL_COLORS[0] + "UPDATING T3RMUXK1NG PRO " + RESET_ALL, end='')
         process = subprocess.Popen(
             "git checkout . && git pull ",
             shell=True,
@@ -207,7 +207,7 @@ def do_git_update():
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
         mesgdcrt.GeneralMessage("Then run command:")
         print(
-            f"git checkout . && git pull https://github.com/rajsaraswati-jatavv/{RS_REPO}.git HEAD")
+            f"git checkout . && git pull https://github.com/T3RMUXK1NG/{RS_REPO}.git HEAD")
     sys.exit()
 
 
@@ -223,9 +223,9 @@ def check_for_updates():
         mesgdcrt.WarningMessage(
             "DEBUG MODE Enabled! Auto-Update check is disabled.")
         return
-    mesgdcrt.SectionMessage("Checking for RS PRO updates")
+    mesgdcrt.SectionMessage("Checking for T3RMUXK1NG PRO updates")
     fver = requests.get(
-        f"https://raw.githubusercontent.com/rajsaraswati-jatavv/{RS_REPO}/main/.version"
+        f"https://raw.githubusercontent.com/T3RMUXK1NG/{RS_REPO}/main/.version"
     ).text.strip()
     if fver != __VERSION__:
         mesgdcrt.WarningMessage("An update is available")
@@ -239,9 +239,9 @@ def check_for_updates():
 def notifyen():
     try:
         if DEBUG_MODE:
-            url = f"https://github.com/rajsaraswati-jatavv/{RS_REPO}/raw/dev/.notify"
+            url = f"https://github.com/T3RMUXK1NG/{RS_REPO}/raw/dev/.notify"
         else:
-            url = f"https://github.com/rajsaraswati-jatavv/{RS_REPO}/raw/main/.notify"
+            url = f"https://github.com/T3RMUXK1NG/{RS_REPO}/raw/main/.notify"
         noti = requests.get(url).text.upper()
         if len(noti) > 10:
             mesgdcrt.SectionMessage("NOTIFICATION: " + noti)
@@ -296,7 +296,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
     mesgdcrt.SuccessMessage(
-        "RS Bomber PRO by RS JATAV | T3rmuxk1ng")
+        "RS Bomber PRO by RS T3RMUXK1NG | T3rmuxk1ng")
     mesgdcrt.GeneralMessage(
         "⚡ SUBSCRIBE: youtube.com/@T3rmuxk1ng")
 
@@ -444,7 +444,7 @@ except (json.JSONDecodeError, KeyError, TypeError):
     update()
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['RS JATAV', 'SpeedX', 't0xic0der', 'scpketer']
+__CONTRIBUTORS__ = ['RS T3RMUXK1NG', 'SpeedX', 't0xic0der', 'scpketer']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -462,12 +462,12 @@ RS Bomber PRO can be used for many purposes which includes -
 
 RS Bomber PRO is not intended for malicious uses.
 
-Created by: RS JATAV | T3rmuxk1ng
+Created by: RS T3RMUXK1NG | T3rmuxk1ng
 YouTube: https://youtube.com/@T3rmuxk1ng
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by RS JATAV | T3rmuxk1ng !!!')
+                                 epilog='Coded by RS T3RMUXK1NG | T3rmuxk1ng !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
                     help="start RS Bomber PRO with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
