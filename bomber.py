@@ -58,8 +58,8 @@ except ImportError:
 
 # T3RMUXK1NG Branding Constants
 T3RMUXK1NG_AUTHOR = "T3RMUXK1NG | T3rmuxk1ng"
-RS_YOUTUBE = "https://youtube.com/@T3rmuxk1ng"
-RS_GITHUB = "https://github.com/T3RMUXK1NG"
+T3RMUXK1NG_YOUTUBE = "https://youtube.com/@T3rmuxk1ng"
+T3RMUXK1NG_GITHUB = "https://github.com/T3RMUXK1NG"
 RS_REPO = "T3RMUXK1NG-Bomber-PRO"
 
 
